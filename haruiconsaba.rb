@@ -22,6 +22,8 @@ Plugin.create(:haruiconsaba) do
 				}
 				mes += "がインしています" + tag
 				Post.primary_service.update(:message => mes)
+			else	
+				Post.primary_service.update(:message => "はるアイコン鯖に誰も居ないよ")
 			end
 		}
 	end
