@@ -3,7 +3,7 @@
 ショートカットキーに設定して使います。
 
 ## 導入方法
-$git clone https://fubukiefsf@bitbucket.org/fubukiefsf/haruiconsaba.git ~/mikutter/plugin
+```$git clone git://github.com/fubukiefsf/haruiconsaba.git ~/mikutter/plugin```
 
 ##使い方
 設定→ショートカットキーで好きなキーにセットして適当なツイート選択して設定したキーを押そう！！
