@@ -9,7 +9,7 @@ Plugin.create(:haruiconsaba) do
 		:haruiconsaba,
 		name: "はるアイコン鯖のログイン者をつぶやく",
 		visible: false,
-		icon: "#{File.dirname(__FILE__)}/haruicon.png",
+		icon: "#{File.dirname(__FILE__)}/haruiconsaba.png",
 		condition: lambda{|opt| true},
 		role: :window
 	 ) do |opt|
