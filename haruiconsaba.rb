@@ -15,16 +15,16 @@ Plugin.create(:haruiconsaba) do
 	 ) do |opt|
 		Thread.new{
 			twiIdInList = JSON.parse(open(haruiconApiUri + "twiIdInList").read)
+			mes = ""
 			if twiIdInList['playerCount'] != 0
-				mes = ""
 				twiIdInList['idList'].each{|ids|
 					mes += ids['mcId'] + tOfh
 				}
 				mes += "がインしています" + tag
-				Post.primary_service.update(:message => mes)
 			else	
-				Post.primary_service.update(:message => "はるアイコン鯖に誰も居ないよ")
+				mes =  "はるアイコン鯖に誰も居ないよ"
 			end
+			Post.primary_service.update(:message => mes)
 		}
 	end
 end
